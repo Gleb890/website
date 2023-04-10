@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PC Hardware</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="cookie.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" />
+  </script>
+
+  <p class="username" id="naming">You are not authorized</p>
+    <a class="registrationbut" onclick="authorize()" id="registration">Authorize</a>
+</head>
+<body>
+
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>PC Hardware</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Новости">Новости</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>О новинках компьютерного железа</h1>
+    <h3>только здесь!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Этот сайт поможет Вам!</h2>
+      <span>Множество информации, которая поможет разобраться в компьютерном железе</span>
+    </div>
+    <div class="text">
+      <span>На данном сайте Вы можете узнать самую свежую информацию из обзоров и тестов, которые сделали отечественные и зарубежные издания, а также блоггеры</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Новости</h2>
+    <h4>На нашем сайте только актуальная информация!</h4>
+
+    <div class="img">
+      <img src="https://www.igorslab.de/wp-content/uploads/2022/11/Box-Open-2048x1474.jpg"  width="500" height="400" alt="">
+      <p><a class="nav_link" href="https://www.ixbt.com/3dv/nvidia-geforce-rtx-4080-review.html" target="_blank">Обзор видеоускорителя Nvidia GeForce RTX 4080 на примере Founders Edition</a></p>
+    </div>
+    <div class="img">
+      <img src="https://www.ixbt.com/img/n1/news/2022/11/3/bclkoc_large.JPG" width="500" height="400" alt="">
+      <p><a class="nav_link" href="https://www.ixbt.com/news/2022/12/28/materinskie-platy-na-chipsete-intel-b760-sohranjat-fishku-predshestvennic--oni-obespechat-razgon-nerazgonjaemyh.html" target="_blank">Материнские платы B760 сохранят «фишку» предшественниц — они обеспечат разгон процессоров без индекса K</a></p>
+    </div>
+    <div class="img">
+      <img src="https://www.ixbt.com/img/x387/n1/news/2022/6/4/Intel-Core-i5-13600K-vs-12600K_large.png" width="500" height="400" alt="">
+      <p><a class="nav_link" href="https://www.ixbt.com/news/2022/07/28/core-i7-13700k-core-i5-13600k.html" target="_blank">Core i5-13600K и i7 13700K в первом обзоре показывает отличную производительность, но снова ценой огромного энергопотребления</a></p>
+    </div>
+    <div class="img">
+      <img src="https://www.ixbt.com/img/x780x600/r30/00/02/49/70/IMG9974.jpg" width="500" height="400" alt="">
+      <p><a class="nav_link" href="https://www.ixbt.com/mobilepc/apple-macbook-pro-14-2021-review.html" target="_blank">Обзор ноутбука Apple MacBook Pro 14” на SoC Apple M1 Pro</a></p>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+      <form id="form_input">
+        <label for="name">Имя<span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта<span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение<span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+      </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Контакты</span><br>
+      <p><a class="nav_link" href="https://vk.com/dsgn4">VK</a></p>
+      <p><a class="nav_link" href="https://t.me/HARTNETT_777">Telegram</a></p>
+      <p><a class="nav_link" href="mailto:gleb.melentev@bk.ru">Электронная почта</a></p>
+    </div>
+    <div>
+      <span class="title">Об авторе</span><br>
+      <p>Сделал студент 1 курса 4 группы</p>
+      <p>Факультета Компьютерных Наук Воронежского Государственного Университета</p>
+      <p>Мелентьев Глеб Николаевич</p>
+    </div>
+      <div>
+        <img src="https://sun9-57.userapi.com/impg/mh89zXfgaayQXuYjHwvqJKzBMtWmyQHEBboLcA/-fd92MGZozY.jpg?size=354x472&quality=95&sign=34599bfe04984a0873d70af232c0695e&type=album" width= "200px" height="200px" alt="">
+        <button onclick="fullscreen(document.documentElement);return false;"></button>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    function slowScroll(id){
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+  $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+    else
+      $("header").attr("class","fixed");
+  });
+  </script>
+</body>
+</html>
